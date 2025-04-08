@@ -13,7 +13,6 @@ The calculator supports basic arithmetic, parentheses, decimal numbers, and incl
 - **Custom expression parser** (no `eval`)
 - Supports `+`, `-`, `*`, `/`, parentheses `( )`
 - Handles decimal numbers
-- Keyboard support
 - Unit tests using `pytest`
 - Proper error handling (e.g., `10/0`, invalid input)
 
