@@ -17,6 +17,20 @@ class CalculatorGUI:
         self.label_result.pack()
 
         self.create_buttons()
+        self.root.bind("<Key>", self.key_handler)
+        
+    def key_handler(self, event):
+        char = event.char
+
+        if char in '0123456789+-*/().':
+            self.show(char)
+        elif char in ('c', 'C'):
+            self.clear()
+        elif char == '\r': 
+            self.calculate()
+
+    
+
 
     def show(self, value):
         self.equation += value
